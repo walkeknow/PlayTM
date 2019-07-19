@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'VideoGame';
+    src: url('../fonts/lilliput-steps/lilliput_steps.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+
+}
+
+.cont_row {
+    margin-top: 25%;
+}
+
+.mssg {
+    margin-top: 30px;
+    font-family: VideoGame, fantasy;
+    font-size: 6em;
+    font-weight: 900;
+}
+
+#exit {
+    font-family: VideoGame, fantasy;
+    font-size: 2.5em;
+}
+
+#select {
+    font-family: VideoGame, fantasy;
+    font-size: 1.25em;
+}
+
+.margin {
+    margin-left: 400px;
+}
+
+.exit {
+    height: 100px;
+    width: 300px;
+}
+
+.exit:hover {
+    /*border: solid 5px rgba(39, 84, 38, 0.97);*/
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -webkit-transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
+    -ms-transition: ease-in 0.1s;
+    -o-transition: ease-in 0.1s;
+    transition: ease-in 0.1s;
+    filter: drop-shadow(8px 8px 10px);
+}
+
+
+#option {
+    font-family: VideoGame, fantasy;
+    font-size: 6em;
+}
+
+.option {
+    font-family: VideoGame, fantasy;
+    font-size: 6em;
+}
+
+.clicked-mssg {
+    color: orangered;
+}
+
+.resize {
+    margin-left: 200px;
+    height: 220px;
+    width: 330px;
+}
+
+.border-new {
+    border: black solid 20px;
+    border-radius: 70px;
+}
+
+.button-resize {
+    margin-left: 200px;
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 4px 0 2px rgba(0,0,0,0.1);
+    border-radius: 50%;
+}
+
+.button-resize:hover {
+    /*border: solid 5px rgba(39, 84, 38, 0.97);*/
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -webkit-transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
+    -ms-transition: ease-in 0.1s;
+    -o-transition: ease-in 0.1s;
+    transition: ease-in 0.1s;
+    filter: drop-shadow(8px 8px 10px);
+    border-radius: 50%;
+}
+
+.button-click {
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+
+

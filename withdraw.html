@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PlayTM</title>
+    <link rel="stylesheet" type="text/css" href="css/atm.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        h3 {
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        .card-size {
+            margin: 20px;
+        }
+
+        .card-inner-size:hover {
+            /*height: 1em;*/
+            /*width: 2em;*/
+            transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1.1, 1.1);
+            -webkit-transition: ease-in 0.2s;
+            -moz-transition: ease-in 0.2s;
+            -ms-transition: ease-in 0.2s;
+            -o-transition: ease-in 0.2s;
+            transition: ease-in 0.2s;
+            filter: drop-shadow(8px 8px 10px);
+        }
+
+        .card-inner-size:active {
+            filter: brightness(80%);
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<br>
+<br>
+<h3 id="option">Select Amount:</h3>
+<div class="container p-2 text-center">
+    <div class="row mt-5">
+        <div class="col card-size">
+            <a href="withdrawing.html">
+                <div class="card card-inner-size bg-light border rounded">
+                    <div class="card-header text-center bg-dark text-white">
+                        Rupees
+                    </div>
+                    <div class="card-body bg-danger text-white">
+                        <h4 class="card-title p-4">
+                            20
+                        </h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col card-size">
+            <a href="withdrawing.html">
+                <div class="card card-inner-size bg-light border rounded">
+                    <div class="card-header text-center bg-dark text-white">
+                        Rupees
+                    </div>
+                    <div class="card-body bg-success text-white">
+                        <h4 class="card-title p-4">
+                            50
+                        </h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col card-size">
+            <a href="withdrawing.html">
+                <div class="card card-inner-size bg-light border rounded">
+                    <div class="card-header text-center bg-dark text-white">
+                        Rupees
+                    </div>
+                    <div class="card-body bg-primary text-white">
+                        <h4 class="card-title p-4">
+                            100
+                        </h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col card-size">
+            <a href="withdrawing.html">
+                <div class="card card-inner-size bg-light border rounded">
+                    <div class="card-header text-center bg-dark text-white">
+                        Rupees
+                    </div>
+                    <div class="card-body bg-warning text-white">
+                        <h4 class="card-title p-4">
+                            200
+                        </h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

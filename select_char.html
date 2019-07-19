@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choose your Avatar | KidTM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <audio id = "select_audio">
+            <source src="media/Character%201.mp3" type="audio/mpeg">
+        </audio>
+        <audio id = "fighter">
+            <source src="media/fighter.wav" type="audio/wav">
+        </audio>
+        <audio id = "adventurer">
+            <source src="media/adventurer.wav" type="audio/wav">
+        </audio>
+        <audio id = "monk">
+            <source src="media/monk.wav" type="audio/wav">
+        </audio>
+        <audio id = "djinn">
+            <source src="media/djinn.wav" type="audio/wav">
+        </audio>
+        <div class="row">
+            
+            <div style="position: relative;">
+
+                <img src="images/avatars.jpg" usemap="#avatars"
+                style="position: absolute; margin: auto; padding-left: 77px; padding-right: 73px;
+                padding-top: 53px; padding-bottom: 50px; height: 100vh; width: 100%;"/>
+                
+                <map name="avatars">
+                <area id="1" href="selectoption.html" shape="rect" coords="235,300,450,870" />
+                <area id="2" href="selectoption.html" shape="rect" coords="535,300,850,870" />
+                <area id="3" href="selectoption.html" shape="rect" coords="990,300,1140,870"/>
+                <area id="4" href="selectoption.html" shape="rect" coords="1350,300,1510,870"/>
+                </map>
+
+                <img src="images/background.jpg" style="height: 100vh; width: 100vw;"/>
+
+
+            </div>
+            
+        </div>
+    
+</div>
+
+    <script>
+        //JQuery for effects
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'audio.mp3');
+        audioElement.setAttribute('autoplay', 'autoplay');
+        audioElement.addEventListener("load", function() {
+        audioElement.play();
+        }, true);
+
+        $(document).ready(function() {
+            console.log( "ready!" );
+            $('map').imageMapResize();
+            $('#1').hover(function () {
+                // over
+                console.log( "#1" );
+
+                audioElement.play();
+            }, function () {
+                // out
+            }
+            );
+
+            $('#2').hover(function () {
+                // over
+                audioElement.setAttribute('src', 'audio.mp3');
+            }, function () {
+                // out
+            }
+            );
+
+            $('#3').hover(function () {
+                // over
+                audioElement.setAttribute('src', 'audio.mp3');
+            }, function () {
+                // out
+            }
+            );
+
+            $('#4').hover(function () {
+                // over
+                audioElement.setAttribute('src', 'audio.mp3');
+            }, function () {
+                // out
+            }
+            );
+        });
+
+
+    
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select_char.js"></script>
+</body>
+</html>
